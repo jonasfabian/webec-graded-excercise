@@ -10,6 +10,11 @@ version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '16'
 targetCompatibility = '16'
 
+bootJar {
+    archivesBaseName = 'kanban-backend'
+    archiveVersion = 'latest'
+}
+
 configurations {
     compileOnly {
         extendsFrom annotationProcessor
@@ -27,6 +32,7 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-jdbc'
     implementation 'org.springframework.boot:spring-boot-starter-jooq'
     implementation 'org.liquibase:liquibase-core'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
     compileOnly 'org.projectlombok:lombok'
     runtimeOnly 'org.postgresql:postgresql'
     testImplementation 'com.h2database:h2'

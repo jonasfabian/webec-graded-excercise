@@ -2,7 +2,7 @@ spring:
   datasource:
     username: admin
     password: admin
-    url: jdbc:postgresql://database:5432/kanban
+    url: jdbc:postgresql://localhost:5432/kanban
     driver-class-name: org.postgresql.Driver
   liquibase:
     change-log: db/changelog/db.changelog-master.xml
