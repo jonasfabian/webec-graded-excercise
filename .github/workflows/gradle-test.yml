@@ -81,5 +81,5 @@ jobs:
         server-id: github # Value of the distributionManagement/repository/id field of the pom.xml
         settings-path: ${{ github.workspace }} # location for the settings.xml file
 
-    - name: Build
-      run: cd frontend && yarn && yarn test
+    - name: Test
+      run: cd frontend && yarn && CI=true yarn test
