@@ -26,7 +26,7 @@ jobs:
         settings-path: ${{ github.workspace }} # location for the settings.xml file
 
     - name: Build
-      run: cd backend && gradle build -x
+      run: cd backend && gradle build -x test
 
   build-frontend:
     runs-on: ubuntu-latest
