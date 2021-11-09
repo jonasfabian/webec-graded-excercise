@@ -1,9 +1,11 @@
- pluginManagement {
+
+pluginManagement {
     repositories {
         maven { url 'https://repo.spring.io/release' }
         mavenCentral()
         gradlePluginPortal()
     }
+
     resolutionStrategy {
         eachPlugin {
             if (requested.id.id == 'org.hibernate.orm') {
@@ -12,4 +14,8 @@
         }
     }
 }
-rootProject.name = 'Kanban-Board'
+
+rootProject.name = 'kanban-board'
+
+include 'backend'
+include 'frontend'

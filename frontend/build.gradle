@@ -1,0 +1,13 @@
+
+task build(type: Exec) {
+    commandLine 'yarn', 'build'
+}
+
+task test(type: Exec) {
+    commandLine 'yarn', 'test'
+}
+
+task docker(type: Exec) {
+    dependsOn ':frontend:build'
+    commandLine 'docker', 'build', '-t', 'kanban-board/frontend:latest', '.'
+}

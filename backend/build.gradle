@@ -15,9 +15,11 @@ bootJar {
     archiveVersion = 'latest'
 }
 
-test {
-    systemProperty 'spring.profiles.active', 'test'
+task docker(type: Exec) {
+    dependsOn ':backend:build'
+    commandLine 'docker', 'build', '-t', 'kanban-board/backend:latest', '.'
 }
+
 
 configurations {
     compileOnly {
@@ -46,6 +48,7 @@ dependencies {
 }
 
 test {
+    systemProperty 'spring.profiles.active', 'test'
     useJUnitPlatform()
 }
 
