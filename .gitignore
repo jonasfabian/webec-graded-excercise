@@ -1,7 +1,13 @@
+# Gradle
+**/.gradle
+**/gradlew*
+**/gradle/wrapper/gradle-wrapper.jar
+
+# IDEs
 **/.idea
 **/.vscode
-**/.gradle
 **/.settings
 **/.project
 
+# DB Data
 .data
