@@ -37,6 +37,7 @@ TODO: write the extras you aim for here (at max 3)
 
 ```
 gradle build
+docker-compose build
 docker-compose up -d
 ```
 
