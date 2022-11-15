@@ -2,6 +2,8 @@
 
 ## Project
 
+### Grade -> 6
+
 ### Team members
 
 Jonas Fabian - jonas.fabian@students.fhnw.ch
